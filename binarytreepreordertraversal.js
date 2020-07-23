@@ -36,7 +36,7 @@ tree.addLeftNode(tree.root.right, 15)
 
 
 //O(n) dfs traversal
-if (!root) {
+if (!tree.root) {
     return []
 }
 let result = []
@@ -52,9 +52,11 @@ function dfs(node) {
 }
 dfs(tree.root)
 
+return result
+
 
 //O(n) bfs traversal
-if (!root) {
+if (!tree.root) {
     return []
 }
 let stack = [tree.root]
